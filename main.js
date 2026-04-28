@@ -1,5 +1,3 @@
-const lottoNumbersContainer = document.getElementById('lotto-numbers');
-const generateBtn = document.getElementById('generate-btn');
 const themeToggleBtn = document.getElementById('theme-toggle');
 const body = document.body;
 
@@ -7,6 +5,10 @@ const body = document.body;
 const currentTheme = localStorage.getItem('theme');
 if (currentTheme) {
     body.classList.add(currentTheme);
+} else {
+    // 기본적으로 다크모드로 시작 (보내주신 디자인이 다크 기반이므로)
+    body.classList.add('dark-mode');
+    localStorage.setItem('theme', 'dark-mode');
 }
 
 themeToggleBtn.addEventListener('click', () => {
@@ -19,30 +21,12 @@ themeToggleBtn.addEventListener('click', () => {
     localStorage.setItem('theme', theme);
 });
 
-const generateLottoNumbers = () => {
-    const numbers = new Set();
-    while (numbers.size < 6) {
-        const randomNumber = Math.floor(Math.random() * 45) + 1;
-        numbers.add(randomNumber);
-    }
-    return Array.from(numbers).sort((a, b) => a - b);
-};
-
-const displayLottoNumbers = (numbers) => {
-    lottoNumbersContainer.innerHTML = '';
-    numbers.forEach(number => {
-        const numberElement = document.createElement('div');
-        numberElement.classList.add('lotto-number');
-        numberElement.textContent = number;
-        lottoNumbersContainer.appendChild(numberElement);
+// Smooth Scroll for Internal Links (Optional)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
-};
-
-generateBtn.addEventListener('click', () => {
-    const numbers = generateLottoNumbers();
-    displayLottoNumbers(numbers);
 });
-
-// Initial generation
-const initialNumbers = generateLottoNumbers();
-displayLottoNumbers(initialNumbers);

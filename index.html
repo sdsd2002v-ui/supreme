@@ -1,68 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto Number Generator</title>
+    <title>슈프림금융지사 - 보험설계사 영업 채용</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="wrapper">
+        <!-- Theme Toggle -->
         <div class="theme-toggle-container">
-            <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Light/Dark Mode">🌓</button>
+            <button id="theme-toggle" class="theme-toggle-btn" title="모드 전환">🌓</button>
         </div>
-        <header>
-            <h1>Lotto Number Generator</h1>
-        </header>
-        <main>
-            <div id="lotto-numbers" class="lotto-numbers-container"></div>
-            <button id="generate-btn" class="generate-button">Generate Numbers</button>
 
-            <section class="contact-section">
-                <h2>제휴 문의</h2>
-                <form action="https://formspree.io/f/mzdylglk" method="POST" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">이름</label>
-                        <input type="text" id="name" name="name" required placeholder="성함을 입력해주세요">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">이메일</label>
-                        <input type="email" id="email" name="_replyto" required placeholder="example@email.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">문의 내용</label>
-                        <textarea id="message" name="message" required placeholder="문의하실 내용을 입력해주세요"></textarea>
-                    </div>
-                    <button type="submit" class="submit-button">문의 보내기</button>
-                </form>
-            </section>
+        <!-- HERO -->
+        <section class="hero">
+          <div class="hero-tag">보험설계사 영업 채용 모집</div>
+          <div class="hero-question">매일 출퇴근해도<br><span class="highlight">수입 제로??</span></div>
+          <div class="hero-question" style="font-size:22px; margin-top:8px;">그건 능력의 문제가 아닌,<br><span class="highlight">환경의 문제입니다.</span></div>
+          <div class="hero-divider"></div>
+          <div class="hero-sub">전략 없는 실행은 방향 없는 질주다.<br>이제 시스템이 만들어내는 진짜 성장을 경험하세요.</div>
+          <div class="hero-main-title">환경이 바뀌면<br>결과도 바뀝니다.</div>
+        </section>
 
-            <section class="comments-section">
-                <h2>댓글</h2>
-                <div id="disqus_thread"></div>
-                <script>
-                    /**
-                    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                    /*
-                    var disqus_config = function () {
-                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                    };
-                    */
-                    (function() { // DON'T EDIT BELOW THIS LINE
-                    var d = document, s = d.createElement('script');
-                    s.src = 'https://https-supreme1-sdsd2002v-workers-dev.disqus.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                    })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2023 Lotto Number Generator</p>
-        </footer>
+        <div class="gold-bar"></div>
+
+        <!-- PROBLEM vs SOLUTION -->
+        <section class="problem-section">
+          <div class="section-label">WHY US</div>
+          <div class="section-title">기존 보험영업 vs<br>슈프림금융지사 시스템</div>
+          <div class="problem-grid">
+            <div class="problem-col-header old">❌ 기존 보험 영업</div>
+            <div class="problem-col-header new">✅ 슈프림금융지사 시스템</div>
+            <div class="problem-row old">실적 압박과<br>불안정한 수입 구조</div>
+            <div class="problem-row new"><strong>최대 1억원</strong><br>초기 정착지원금 제공</div>
+            <div class="problem-row old">끊임없는<br>가족/지인 영업 강요</div>
+            <div class="problem-row new">마르지 않는<br><strong>DB 무제한 제공</strong><br><span style="font-size:12px; opacity:0.6">(지인 영업 0%)</span></div>
+            <div class="problem-row old">강제 할당 및<br>출퇴근 눈치</div>
+            <div class="problem-row new">출근 10시<br><strong>100% 자율 근무</strong></div>
+          </div>
+        </section>
+
+        <div class="gold-bar"></div>
+
+        <!-- SUPPORT -->
+        <section class="support-section">
+          <div class="section-label" style="color: var(--gold); position:relative; z-index:1;">SUPPORT</div>
+          <div style="height:14px;"></div>
+          <div class="support-badge">
+            <div class="support-badge-label">초기 정착지원금</div>
+            <div class="support-badge-amount">1억</div>
+            <div class="support-badge-sub">최대 지원</div>
+          </div>
+          <div class="support-title">신입 · 경력 상관없이<br>최대 정착지원금 1억원</div>
+          <div class="support-desc">처음 시작하는 분도, 이직을 고려하는 분도<br>경력과 무관하게 파격적인 초기 정착을 지원합니다.</div>
+          <div class="support-chips">
+            <div class="chip">#초보자환영</div>
+            <div class="chip">#N잡러가능</div>
+            <div class="chip">#단기고소득</div>
+            <div class="chip">#주부가능</div>
+            <div class="chip">#경력무관</div>
+          </div>
+        </section>
+
+        <div class="gold-bar"></div>
+
+        <!-- DB SUPPORT -->
+        <section class="db-section">
+          <div class="section-label">DB SUPPORT</div>
+          <div class="section-title">담당자 DB 지원<br>DB 무제한 제공</div>
+          <div class="db-big">
+            <div class="db-big-number">10,000+</div>
+            <div class="db-big-label">프리미엄 고객 DB 이상 보유</div>
+            <div class="db-big-sub">채널 5개 운영 · 지속 생성 중</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card-title"><div class="icon">💎</div>프리미엄 DB 생성 채널 5개 운영</div>
+            <ul class="feature-list">
+              <li>자체 홈페이지 운영 — 지속적인 인바운드 DB 수급</li>
+              <li>자체 교육 플랫폼 운영 — 품질 높은 관심 고객 확보</li>
+              <li>퍼미션 · 이관 · 광고 DB 무한 활용</li>
+              <li>지인 영업 없이도 마르지 않는 고객 파이프라인</li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="gold-bar"></div>
+
+        <!-- PIPELINE -->
+        <section class="channel-section">
+          <div class="section-label">PIPELINE</div>
+          <div class="section-title" style="color: #fff">나에게 맞는<br>다양한 영업 채널</div>
+          <div class="channel-grid">
+            <div class="channel-item"><div class="channel-icon">🗃️</div><div class="channel-item-title">DB 영업</div><div class="channel-item-desc">퍼미션 · 이관 · 광고 DB<br>무한 활용 가능</div></div>
+            <div class="channel-item"><div class="channel-icon">🛒</div><div class="channel-item-title">개척 영업</div><div class="channel-item-desc">마트 · 택배 · 개인택시 등<br>현장 개척 영업 지원</div></div>
+            <div class="channel-item"><div class="channel-icon">📱</div><div class="channel-item-title">SNS 마케팅</div><div class="channel-item-desc">틱톡 · 인스타그램 등<br>트렌디한 SNS 채널 활용</div></div>
+            <div class="channel-item"><div class="channel-icon">🌐</div><div class="channel-item-title">홈페이지 영업</div><div class="channel-item-desc">개인 브랜딩 홈페이지로<br>인바운드 고객 수급</div></div>
+          </div>
+        </section>
+
+        <div class="gold-bar"></div>
+
+        <!-- FAST-TRACK -->
+        <section class="edu-section">
+          <div class="section-label">FAST-TRACK</div>
+          <div class="section-title">체계적인 맞춤 교육<br>Premium Fast-Track</div>
+          <div class="edu-steps">
+            <div class="edu-step"><div class="step-num">1</div><div><div class="step-content-title">⚡ 1주일 단기 속성 과정</div><div class="step-content-desc">자체 교육 플랫폼 활용. 핵심만 담은 집중 교육으로<br>빠르게 현장 투입 가능한 수준까지 성장합니다.</div></div></div>
+            <div class="edu-step"><div class="step-num">2</div><div><div class="step-content-title">🎯 1달 실무 마스터 과정</div><div class="step-content-desc">현장 투입 후 실전 케이스 중심 교육.<br>억대 연봉자와 함께하는 실무 밀착 트레이닝.</div></div></div>
+            <div class="edu-step"><div class="step-num">AI</div><div><div class="step-content-title">🤖 AI 시대 맞춤 광고 교육</div><div class="step-content-desc">AI 활용 광고 및 홍보 교육 지원.<br>최신 디지털 마케팅 역량을 함께 키웁니다.</div></div></div>
+          </div>
+        </section>
+
+        <div class="gold-bar"></div>
+
+        <!-- SCALE-UP -->
+        <section class="manage-section">
+          <div class="section-label">SCALE-UP</div>
+          <div class="section-title" style="color: #fff">밀착 관리 및 브랜딩</div>
+          <div class="manage-cards">
+            <div class="manage-card"><div class="manage-card-icon">♾️</div><div><div class="manage-card-title">1:1 무한 피드백 (억대연봉자 직접)</div><div class="manage-card-desc">실적이 발생할 때까지 이어지는 무한 피드백.<br>억대 연봉 달성자가 직접 멘토로 함께합니다.</div></div></div>
+            <div class="manage-card"><div class="manage-card-icon">🌏</div><div><div class="manage-card-title">개인 브랜딩 홈페이지 무상 구축</div><div class="manage-card-desc">개인 브랜딩 및 광고를 위한<br>전용 홈페이지 구축을 무상으로 지원합니다.</div></div></div>
+            <div class="manage-card"><div class="manage-card-icon">🤖</div><div><div class="manage-card-title">AI 광고 및 홍보 교육 지원</div><div class="manage-card-desc">AI 시대에 맞는 최신 광고 전략.<br>디지털 퍼포먼스 마케팅까지 체계적으로 교육합니다.</div></div></div>
+          </div>
+        </section>
+
+        <div class="gold-bar"></div>
+
+        <!-- LIFESTYLE -->
+        <section class="life-section">
+          <div class="section-label">LIFESTYLE</div>
+          <div class="section-title">출퇴근 스트레스 ZERO<br>나를 위한 근무 환경</div>
+          <div class="life-grid">
+            <div class="life-item"><div class="life-item-icon">🕙</div><div class="life-item-title">출근 10시</div><div class="life-item-desc">강제 조기 출근 없이<br>10시 자율 출근으로 시작</div></div>
+            <div class="life-item"><div class="life-item-icon">🏠</div><div class="life-item-title">자율 근무</div><div class="life-item-desc">투잡 · 육아 병행<br>완벽히 가능한 100% 자율</div></div>
+            <div class="life-item"><div class="life-item-icon">🏢</div><div class="life-item-title">지점 오픈 기회</div><div class="life-item-desc">나만의 지점 오픈<br>지점 운영 전면 지원</div></div>
+            <div class="life-item"><div class="life-item-icon">👑</div><div class="life-item-title">지점장 도약</div><div class="life-item-desc">개인을 넘어<br>관리자로 성장하는 길</div></div>
+          </div>
+        </section>
+
+        <div class="gold-bar"></div>
+
+        <!-- GROWTH PATH -->
+        <section class="growth-section">
+          <div class="section-label">GROWTH PATH</div>
+          <div class="section-title" style="color: #fff">함께 성장하는 파트너<br>영업은 혼자 하는 게 아닙니다</div>
+          <div class="growth-steps">
+            <div class="growth-step"><div class="growth-step-badge">1단계<br>안착</div><div><div class="growth-step-title">초기 정착 안정성 확보</div><div class="growth-step-desc">최대 1억원 정착지원금으로 수입 걱정 없이 시작</div></div></div>
+            <div class="growth-step"><div class="growth-step-badge">2단계<br>부스트</div><div><div class="growth-step-title">실적 연동 유상 DB + 상금</div><div class="growth-step-desc">성과에 따른 추가 DB 지원 및 보너스로 선순환 구조 진입</div></div></div>
+            <div class="growth-step"><div class="growth-step-badge">3단계<br>정점</div><div><div class="growth-step-title">연봉 1억 원 이상 역대급 수익</div><div class="growth-step-desc">시스템에 올라탄 결과 — 억대 연봉 달성</div></div></div>
+            <div class="growth-step"><div class="growth-step-badge">4단계<br>확장</div><div><div class="growth-step-title">지점장으로 도약 · 2배 성장</div><div class="growth-step-desc">개인을 넘어 관리자로 성장, 2026년 2배 성장 목표의 주역</div></div></div>
+          </div>
+        </section>
+
+        <div class="gold-bar"></div>
+
+        <!-- CTA -->
+        <section class="cta-section">
+          <div class="cta-title">시스템이 만들어내는<br>진짜 성장, 지금 탑승하세요.</div>
+          <div class="cta-sub">지인 영업의 굴레에서 벗어날 마지막 기회입니다.</div>
+          <div class="cta-box">
+            <div class="cta-limit">⏳ <strong>[채용 마감 주의]</strong> 각 지사 선착순 5명 한정</div>
+            <div class="cta-period">채용 기간 : 2026.04.10 ~ (T.O 소진 시 즉각 조기 마감)</div>
+          </div>
+          <div class="cta-phone"><div><div class="cta-phone-label">📞 이력서 제출 및 면접 문의</div><div class="cta-phone-number">010-9446-1303</div></div></div>
+          <div class="cta-final">"환경이 바뀌면 결과도 바뀝니다."<br>슈프림금융지사가 그 환경이 되어드립니다.</div>
+        </section>
+
+        <div class="gold-bar"></div>
+
+        <!-- ONLINE APPLICATION (Formspree) -->
+        <section class="contact-section">
+          <div class="section-label">CONTACT US</div>
+          <div class="section-title" style="text-align: center;">입사 지원 및 제휴 문의</div>
+          <form action="https://formspree.io/f/mzdylglk" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name" required placeholder="성함을 입력해주세요">
+            </div>
+            <div class="form-group">
+                <label for="phone">연락처</label>
+                <input type="text" id="phone" name="phone" required placeholder="010-0000-0000">
+            </div>
+            <div class="form-group">
+                <label for="message">문의 내용 (경력 유무 등)</label>
+                <textarea id="message" name="message" required placeholder="문의하실 내용을 자유롭게 남겨주세요"></textarea>
+            </div>
+            <button type="submit" class="submit-button">제출하기</button>
+          </form>
+        </section>
+
+        <!-- COMMUNITY (Disqus) -->
+        <section class="comments-section">
+          <div class="section-label">COMMUNITY</div>
+          <div class="section-title" style="text-align: center;">자유 게시판 및 후기</div>
+          <div id="disqus_thread"></div>
+          <script>
+              (function() { 
+              var d = document, s = d.createElement('script');
+              s.src = 'https://https-supreme1-sdsd2002v-workers-dev.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </section>
+
+        <!-- FOOTER -->
+        <div class="footer">
+          <div class="footer-logo">슈프림금융지사</div>
+          <div class="footer-desc">
+            코스닥 상장사 · 남양주지사 / 성남지사<br>
+            국내 최초 코스닥 상장 GA — 투명성과 자본력이 보장된 상장 법인
+          </div>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
