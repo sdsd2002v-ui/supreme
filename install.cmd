@@ -1,4 +1,4 @@
-@echo off
+ disqus로 댓글 기능도 구현해서 페이지 밑에 붙어줘.  ㅎ@echo off
 setlocal enabledelayedexpansion
 
 REM Claude Code Windows CMD Bootstrap Script
